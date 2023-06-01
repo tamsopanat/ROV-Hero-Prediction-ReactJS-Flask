@@ -1,0 +1,19 @@
+.output {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #FFEBC2;
+    height: 50vh;
+    max-width: 600px !important;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.output h3{
+    font-weight: bold;
+}
+
+.output img{
+    margin-top: 20px;
+    width: 30%;
+    border-radius: 5px;
+}
