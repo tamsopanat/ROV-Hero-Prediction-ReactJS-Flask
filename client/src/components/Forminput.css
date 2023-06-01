@@ -55,14 +55,9 @@
     align-items: center;
 }
 
-.img-input img{
-    width: 20%;
-}
-
 .input input {
     display: block;
-    width: 75%;
-    height: 10%;
+    width: 90%;
     border: none;
     opacity: 0.5;
 }

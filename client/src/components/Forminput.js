@@ -1,11 +1,11 @@
 import './Forminput.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 
 function Forminput(props) {
+    // Set Data for input model
     const [heroData, setheroData] = useState({});
-    console.log(heroData)
     function handleFormSubmit(e) {
         e.preventDefault();
         axios({
@@ -23,6 +23,9 @@ function Forminput(props) {
             })
     }
 
+    //Decorate input form with hero img
+
+
     return <form className="form-input container">
         <div className='row'>
             <div className="col text-center">
@@ -35,10 +38,7 @@ function Forminput(props) {
         <div className='row'>
             <div className="input blue col first">
                 <label>Carry</label>
-                <div className='img-input'>
-                    <img src='https://cdn-webth.garenanow.com/mgames/kgcenter/th/Art_Resources/UI/Dynamic/Icon/301180.png'></img>
-                    <input type="text" onChange={e => setheroData({ ...heroData, 'carryTeamBlue': e.target.value })}></input>
-                </div>
+                <input type="text" onChange={e => setheroData({ ...heroData, 'carryTeamBlue': e.target.value })}></input>
             </div>
             <div className="input red col first">
                 <label>Carry</label>

@@ -12,6 +12,7 @@ def model():
     if request.method == "POST":
         #Input Data
         heroData = request.json
+        heroData = {key:heroData[key] for key in heroData if heroData[key] != ''}
         feature = list(heroData.keys())
         feature.remove('predict')
         target = heroData['predict']
